@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valim Serviços</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Ícones Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl md:text-3xl font-bold">Valim Serviços</h1> <!-- Reduzido para tela pequena -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:underline"><i class="fa-solid fa-house"></i></a>
+                <a href="#about" class="hover:underline">Sobre</a>
+                <a href="#services" class="hover:underline">Serviços</a>
+                <a href="#contact" class="hover:underline">Contato</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-3xl">
+                <span class="material-icons">menu</span>
+            </button>
+        </div>
+    </header>
+    
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-green-600 text-white text-center py-4">
+        <ul>
+            <li class="py-2"><a href="#home" class="hover:underline">Home</a></li>
+            <li class="py-2"><a href="#about" class="hover:underline">Sobre</a></li>
+            <li class="py-2"><a href="#services" class="hover:underline">Serviços</a></li>
+            <li class="py-2"><a href="#contact" class="hover:underline">Contato</a></li>
+        </ul>
+    </div>
+
+<!-- Seção Hero -->
+<main id="home" class="relative text-center py-24 px-6">
+    <div class="pullRelease">
+        <h2>Solução Corporativa Inteligente</h2>
+        <p>
+            Fornecemos soluções estratégicas para otimizar a operação da sua empresa.  
+            Com uma ampla linha de suprimentos e equipamentos de alta qualidade, garantimos  
+            eficiência, economia e inovação para o seu negócio.
+        </p>
+        <a href="#services" class="btn btn-primary">
+            Conheça Nossos Serviços
+        </a>
+    </div>
+</main>
+
+<!-- Seção Serviços -->
+<section id="services" class="py-20  text-center px-4 fade-in">
+  <h2 class="text-3xl font-bold text-green-700">Nossos Serviços</h2>
+  <p class="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
+      Com mais de <strong>2 anos de experiência</strong>, fornecemos soluções completas para empresas,  
+      oferecendo equipamentos, suprimentos e itens essenciais para escritórios, comércios e indústrias.  
+      Nosso compromisso é garantir qualidade, eficiência e um atendimento personalizado.
+  </p>
+  <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="tservices">
+            <i class="fa-solid fa-desktop"></i>
+                Computadores & Notebooks</h3>
+          <p class="mt-2 text-gray-600">Venda e distribuição de equipamentos de tecnologia.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="tservices">
+            <i class="fa-solid fa-print"></i>
+                Impressoras & Suprimentos</h3>
+          <p class="mt-2 text-gray-600">Toners, cartuchos e impressoras para seu escritório.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="tservices">
+            <i class="fa-solid fa-kitchen-set"></i>
+                Copa & Cozinha</h3>
+          <p class="mt-2 text-gray-600">Eletrodomésticos e utensílios para empresas.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="tservices">
+            <i class="fa-solid fa-stapler"></i>
+                Papelaria & Escritório</h3>
+          <p class="mt-2 text-gray-600">Fornecimento de materiais de papelaria, organizadores e itens essenciais para escritórios.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="tservices">
+            <i class="fa-solid fa-broom"></i>
+                Higiene & Limpeza</h3>
+        <p class="mt-2 text-gray-600">
+            Produtos para a limpeza e manutenção de ambientes corporativos, e itens de higiene pessoal.
+        </p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="tservices">
+            <i class="fa-solid fa-head-side-mask"></i>
+                EPIs & Segurança</h3>
+        <p class="mt-2 text-gray-600">
+            Equipamentos de Proteção Individual (EPIs).
+        </p>
+    </div>
+  </div>
+</section>
+
+<!-- Seção Principais Clientes -->
+<section id="clients" class="py-20 text-center px-4 bg-white fade-in">
+  <h2 class="tcc">Nossos Principais Clientes</h2>
+  <p class="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
+      Atendemos empresas de diversos segmentos, oferecendo produtos de qualidade e um serviço eficiente.  
+      Confira algumas das marcas que confiam na <strong>Valim Serviços</strong>.
+  </p>
+  
+  <div class="mt-8 flex flex-wrap justify-center items-center gap-8">
+    <img src="assets/sgg.png" alt="Cliente 1" class="h-20 cliente-logo cssanimation zoomInTop">
+    <img src="assets/hc-ufg.png" alt="Cliente 2" class="h-20 cliente-logo cssanimation zoomInTop">
+    <img src="assets/logo_seds_-_aplicacao_brasao_b-510.png" alt="Cliente 3" class="h-20 cliente-logo cssanimation zoomInTop">
+</div>
+
+</section>
+
+
+    <!-- Seção Contato -->
+<section id="contact" class="py-20 text-center px-4 fade-in">
+    <h2 class="tcc">Entre em Contato</h2>
+    <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+        Estamos prontos para atender sua empresa. Entre em contato conosco para solicitar um orçamento.
+    </p>
+    <button class="mt-6 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+        Fale Conosco
+    </button>
+</section>
+    <!-- Script para Menu Mobile -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".fade-in");
+            function checkScroll() {
+                sections.forEach(section => {
+                    const sectionPos = section.getBoundingClientRect().top;
+                    const screenPos = window.innerHeight / 1.3; // Quando 70% da seção está visível
+                    if (sectionPos < screenPos) {
+                        section.classList.add("show");}
+                });
+            }
+        
+        window.addEventListener("scroll", checkScroll);
+        checkScroll(); // Garante que seções já visíveis sejam ativadas imediatamente
+        });
+    </script>
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const clientLogos = document.querySelectorAll(".cliente-logo");
+                let delay = 0;
+
+                clientLogos.forEach((logo, index) => {
+                    setTimeout(() => {
+                        logo.style.opacity = "1"; // Torna visível
+                        logo.classList.add("cssanimation", "zoomInTop");
+                    },
+                    index * 2500); // Intervalo de 2,5s entre cada imagem
+                });
+            });
+    </script>
+        <!-- Rodapé -->
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+            <!-- footer col-->          
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#"> Quem somos </a></li>
+                    <li><a href=""> política de privacidade </a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Serviços</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Endereço</h4>
+                <ul>
+                    <li><a href="#">Goiania, Go - Brasil</a></li>
+                    <h4>Contato</h4>
+                    <p>( 62 ) 9 9999-9999</p>
+                    <p>contato@valimservicos.com</p>
+                </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Se Inscreva!</h4>
+                <div class="form-sub">
+                    <form>
+                        <input type="email" placeholder="Digite o seu E-mail" required>
+                            <button>Inscreva-se</button>
+                    </form>
+                </div>
+            </div>
+                <!--end footer col-->
+        </div>
+        </div>
+    </footer>  
+    
+    <footer class="Rodape">
+        <p>&copy; 2025 Valim Comércio e Distribuição - Todos os direitos reservados.</p>
+        <div class="medias-socias">
+            <a href="#"> <i class="fa fa-facebook"></i> </a>
+            <a href="#"> <i class="fa fa-instagram"></i> </a>
+            <a href="#"> <i class="fa fa-twitter"></i> </a>
+            <a href="#"> <i class="fa fa-linkedin"></i> </a>
+        </div>
+    </footer>   
+</body>
+</html>

@@ -1,0 +1,377 @@
+/* Resetando margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 16px 24px;
+    background: #013A20;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #d4edda;
+}
+
+/* HERO SECTION */
+/* Seção Hero */
+#home {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #141313;
+    background-image: url('../assets/hero2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Estilo do título */
+#home h2 {
+    font-size: 2.5rem; /* Ajuste para telas grandes */
+    font-weight: 700;
+    color: #013A20;
+    margin-bottom: 15px;
+}
+
+/* Estilo do parágrafo */
+#home p {
+    font-size: 1.2rem;
+    color: #4a5568; /* Cinza médio */
+    max-width: 600px; /* Mantém um limite de largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    #home h2 {
+        font-size: 1.8rem; /* Reduzido para telas menores */
+    }
+    #home p {
+        font-size: 1rem; /* Texto menor para telas pequenas */
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+    background-color: #013A20;
+    margin-top: 30px; /* Move para baixo */
+    margin-bottom: 20px; /* Move para cima */
+    }
+
+
+.btn-primary {
+    background-color: #2D6A4F; /* Verde escuro */
+    color: rgb(224, 230, 221);
+}
+
+.btn-primary:hover {
+    background-color: #1B4332; /* Verde mais escuro */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* SERVIÇOS */
+#services {
+    background: #EBEBE8;
+    padding: 50px 20px;
+}
+
+#services h2 {
+    color: #2F5233;
+    font-size: 2.2rem;
+}
+
+.tservices {
+    font-size: 1.25rem; /* Equivalente a text-xl */
+    font-weight: 600; /* Equivalente a font-semibold */
+    color: #2e5f34; 
+}
+
+.tcc {
+    font-size: 1.875rem; /* Equivalente a text-3xl */
+    font-weight: 700; /* Equivalente a font-bold */
+    color: #2e5f34; 
+}
+
+#services p {
+    font-size: 1.1rem;
+}
+
+#services .grid div {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#services .grid div:hover {
+    transform: translateY(-5px);
+}
+
+#services .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas grandes */
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #services .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    #services .grid {
+        grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
+    }
+}
+
+/* CLIENTES */
+#clients img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+#clients img:hover {
+    filter: grayscale(0%);
+}
+
+/* CONTATO */
+#contact button {
+    background: #2F5233;
+    color: white;
+    padding: 14px 24px; /* Botão maior para facilitar o clique em dispositivos móveis */
+}
+
+/* RODAPÉ */
+footer {
+    background: #2F5233;
+    color: white;
+    padding: 15px 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* As imagens começam invisíveis */
+.cliente-logo {
+    opacity: 0;
+}
+
+/* Ativa a animação */
+.cssanimation {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  display: inline-block;
+}
+
+/* Define a animação */
+.zoomInTop { 
+    animation-name: zoomInTop; 
+}
+
+/* Keyframes da animação */
+@keyframes zoomInTop {
+    from {
+        transform: scale(5) translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.pullRelease {
+    animation-name: pullRelease;
+    animation-duration: 0.6s; /* Tempo total da animação */
+    animation-timing-function: ease-out; /* Deixa a animação mais suave */
+}
+
+@keyframes pullRelease {
+    0% { transform: scale(1); }
+    15% { transform: scale(1.8); }
+    100% { transform: scale(1); } /* Retorna ao tamanho original */
+}
+
+.pullRelease:hover {
+    animation: pullRelease 0.6s ease-out;
+}
+
+/* footer */
+footer{
+    background-color: #2F5233;
+    padding: 50px 0;
+}
+
+.container-footer{
+    max-width: 1100px;
+    padding: 0 4%;
+    margin: auto;
+    display: grid;
+}
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: #2F5233;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #2F5233;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #2F5233;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: white;        
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}
+
+.Rodape {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #2F5233;
+    color: white;
+    text-align: center;
+}
+
+
